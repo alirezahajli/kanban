@@ -8,7 +8,7 @@ print(' '*30,end='')
 cprint('this track defined for buy group(issues)','green')
 print('='*60)
 def fix_issues():
-    issue = Works('192.168.1.8', 'issue','buy','new')
+    issue = Works('Your_Ip_Address', 'issue','Your_Project_Name','Your_Team_Name')
     items = issue.get_items()
     ll= len(items['workItems'])
     shuf=[]
