@@ -7,7 +7,7 @@ class Works:
     headers = {
 
       'Content-Type': 'application/json-patch+json',
-      'Authorization': 'Basic OmZ3amFmNGhsY2tncHFkZGZlNmRoM3lncXR5NXBvcGRmb3pzZXJtNTVlazdpbmhqcTNxYmE='
+      'Authorization': 'YOUR_TOKEN'
     }
 
     def __init__(self, ip, type_item,project_name,team_name):
