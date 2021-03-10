@@ -9,15 +9,17 @@ cprint('this track defined for buy group(epic)','yellow')
 print('='*60)
 
 def fix_epics_buy():
-    epics = Works('192.168.1.8', 'epic','buy','new')
+    epics = Works('YOUR_IP_ADDRESS', 'epic','buy','new')
+#     epics = Works('YOUR_IP_ADDRESS', 'Backlog_navigation_levels','Project_Name','Team_Name')
     items = epics.get_items()
     ll= len(items['workItems'])
     shuf=[]
+# 	searche for workitmes and get job's id
     for i in range(ll):
       shuf.append(items['workItems'][i]['target']['id']) 
 	
       random.shuffle(shuf) 
-
+# 	I custumize board to have 9 column and i have defined difreent case to change job's state and also area
     for i in range(len(shuf)):
 
         item = epics.get_info(shuf[i])
